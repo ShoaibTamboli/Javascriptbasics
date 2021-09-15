@@ -76,14 +76,13 @@ console.log(elm2, pr)
 
 ///////////////////////Quiz--- Create a heading element with text as "Go to code with harry" and create an A tag outside it with href=www.codewithharry.com;
 
-let element1 = document.createElement('h1');
-let text = document.createTextNode('Go to Code');
+let newlink=document.createElement('a')
 
-element1.appendChild(text);
+let h2=document.createElement('h2')
 
-element2.href = '//codewithharry.com';
-let div = document.querySelector('div.container');
-console.log(element2);
+newlink.innerHTML="Code with harry"
+newlink.setAttribute('href','https://www.codewithharry.com/')
+h2.append(newlink)
 
 let target=document.querySelector('.dummy4')
 
