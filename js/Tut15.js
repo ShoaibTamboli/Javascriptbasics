@@ -81,24 +81,13 @@ let text = document.createTextNode('Go to Code');
 
 element1.appendChild(text);
 
-let element2 = document.createElement('a');
 element2.href = '//codewithharry.com';
-element2.appendChild(element1);
 let div = document.querySelector('div.container');
-div.appendChild(element2);
 console.log(element2);
 
-let myhead=document.createElement('h1')
-let mytitle='Code with Harry'
+let target=document.querySelector('.dummy4')
 
-myhead.append(mytitle)
+target.appendChild(h2)
+////////////////////////////
 
 
-let myurl=document.createElement('a');
-myurl.href='//codewithharry.com'
-
-myurl.appendChild(myhead)
-
-let mytext=document.querySelector('.dummy4')
-mytext.appendChild(myhead)
-console.log(myhead)
