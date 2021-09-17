@@ -45,11 +45,24 @@ let thingOP=localStorage.getItem('Things')
 thingOP=JSON.parse(localStorage.getItem('Things'))  ///JSON.Parse will be used in .getItem 
 console.log(thingOP,typeof(thingOP))
 
-//Note: whenever we want to store into localstorage use Json.Stringify . it will take Object as input and will return String.
+//Note: whenever we want to store into localstorage use Json.Stringify . it will take Object as input and will return you a String.
 
 //to Retrive use Json.parse, Json.parse will take string as an arugument and return an Object
 
 
 
 ////////////SESSION STORAGE///////////////////
+
+sessionStorage.setItem('sessionname','shoaibsession')
+
+sessionStorage.setItem('sessionAge','24')
+
+sessionStorage.setItem('sessionsabzi',vegArray)
+
+sessionStorage.setItem('sessionfruit',JSON.stringify(fruitArray))
+
+//Note: Local storage will last forever. there is no expiry date.
+//Session storage will clear its data once the browser is restarted.
+
+//To clear session storage use: sessionStorage.clear().
 
