@@ -28,6 +28,5 @@ targetDiv.append(newDiv);
 
 let headone=document.querySelector('#heading');
 headone.addEventListener('click', function(e) {
-    let a =e.timeStamp
-    console.log(a)
+    
 })
